@@ -14,7 +14,7 @@ export class Playlist extends React.Component{
     }
     
     render(){
-        retrun (
+        return (
             <div className="Playlist">
                 <input defaultvalue= {'New Playlist'} onChange={this.handleNameChange}/>
                 <TrackList isRemoval={true} onRemove={this.props.onRemove} tracks={this.props.playlistTracks}/>
